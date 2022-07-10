@@ -8,9 +8,13 @@
     "linter": "standard",
     "linter-fix": "standard --fix"
   },
+  "pre-commit": [
+    "linter"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "pre-commit": "^1.2.2",
     "standard": "^17.0.0"
   }
 }
