@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --silent --colors --noStackTrace --watchAll",
-    "test-staged": "jest --silent --noStackTrace",
-    "test-ci": "jest --noStackTrace",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test-unit": "npm test -- --watch",
+    "test-staged": "npm test -- --noStackTrace",
+    "test-ci": "npm test -- --noStackTrace",
     "linter": "standard",
     "linter-fix": "standard --fix"
   },
