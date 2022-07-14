@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --silent --colors --noStackTrace",
+    "test": "jest --silent --colors --noStackTrace --watchAll",
     "test-staged": "jest --silent --noStackTrace",
+    "test-ci": "jest --noStackTrace",
     "linter": "standard",
     "linter-fix": "standard --fix"
   },
@@ -13,14 +14,20 @@
     "linter",
     "test-staged"
   ],
+  "pre-push": [
+    "test-ci"
+  ],
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.2",
+    "jest": "^28.1.3",
     "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.3",
     "standard": "^17.0.0"
   },
   "dependencies": {
