@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test-staged": "jest",
+    "test": "jest --silent --colors --noStackTrace",
+    "test-staged": "jest --silent --noStackTrace",
     "linter": "standard",
     "linter-fix": "standard --fix"
   },
