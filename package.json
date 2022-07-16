@@ -35,6 +35,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.4.4",
-    "npm-cli": "^0.1.0"
+    "npm-cli": "^0.1.0",
+    "validator": "^13.7.0"
   }
 }
